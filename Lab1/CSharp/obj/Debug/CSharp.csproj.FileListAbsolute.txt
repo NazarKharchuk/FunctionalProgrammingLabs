@@ -1,0 +1,7 @@
+D:\Code\FunctionalProgramming\Lab1\CSharp\bin\Debug\CSharp.exe.config
+D:\Code\FunctionalProgramming\Lab1\CSharp\bin\Debug\CSharp.exe
+D:\Code\FunctionalProgramming\Lab1\CSharp\bin\Debug\CSharp.pdb
+D:\Code\FunctionalProgramming\Lab1\CSharp\obj\Debug\CSharp.csprojAssemblyReference.cache
+D:\Code\FunctionalProgramming\Lab1\CSharp\obj\Debug\CSharp.csproj.CoreCompileInputs.cache
+D:\Code\FunctionalProgramming\Lab1\CSharp\obj\Debug\CSharp.exe
+D:\Code\FunctionalProgramming\Lab1\CSharp\obj\Debug\CSharp.pdb
