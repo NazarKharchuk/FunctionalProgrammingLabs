@@ -22,3 +22,9 @@ main = do
   log $ show $ Lab2.findLastIndex (\x -> x >= 2) (1 : 2 : 3 : 4 : Nil)
   log "Function \"findLastIndex\" with arguments: (\\x -> x > 5) (1 : 2 : 3 : 4 : 5 : Nil)"
   log $ show $ Lab2.findLastIndex (\x -> x > 5) (1 : 2 : 3 : 4 : 5 : Nil)
+
+  log "\tFunction #3"
+  log "Function \"zip\" with arguments: (\"one\" : \"two\" : \"three\" : Nil) (1 : 2 : 3 : Nil)"
+  log $ show $ Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : Nil)
+  log "Function \"zip\" with arguments: (\"one\" : \"two\" : \"three\" : Nil) (1 : 2 : 3 : 4 : 5 : Nil)"
+  log $ show $ Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : 4 : 5 : Nil)
