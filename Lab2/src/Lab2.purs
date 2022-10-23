@@ -24,3 +24,10 @@ zip _ Nil = Nil
 zip Nil _ = Nil
 zip (a : as) (b : bs) = ((Tuple a b) : (zip as bs))
 zip Nil Nil = Nil
+
+unzip :: forall a b. List (Tuple a b) -> Tuple (List a) (List b)
+unzip tupleList = (Tuple (createList tupleList (\(Tuple one _) -> one)) (createList tupleList (\(Tuple _ two) -> two)))
+    where 
+        createList :: forall a_or_b. List (Tuple a b) -> ((Tuple a b) -> a_or_b) -> List a_or_b
+        createList (x : xs) f = ((f x) : (createList xs f))
+        createList Nil _ = Nil

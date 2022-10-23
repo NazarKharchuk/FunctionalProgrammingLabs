@@ -28,3 +28,7 @@ main = do
   log $ show $ Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : Nil)
   log "Function \"zip\" with arguments: (\"one\" : \"two\" : \"three\" : Nil) (1 : 2 : 3 : 4 : 5 : Nil)"
   log $ show $ Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : 4 : 5 : Nil)
+
+  log "\tFunction #4"
+  log "Function \"unzip\" with arguments: zip((\"one\" : \"two\" : \"three\" : Nil) (1 : 2 : 3 : Nil))"
+  log $ show $ Lab2.unzip (Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : Nil))
