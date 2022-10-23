@@ -44,3 +44,7 @@ main = do
   log "\tFunction #7"
   log "Function \"take\" with arguments: 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)"
   log $ show $ Lab2.take 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)
+
+  log "\tFunction #8"
+  log "Function \"take\" with arguments: 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)"
+  log $ show $ Lab2.take2 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)

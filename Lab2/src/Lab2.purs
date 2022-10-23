@@ -47,3 +47,11 @@ take :: forall a. Int -> List a -> List a
 take 0 _ = Nil 
 take _ Nil = Nil 
 take digit (x : xs) = if (digit > 0) then (x : (take (digit - 1) xs)) else Nil
+
+take2 :: forall a. Int -> List a -> List a
+take2 d list = (reverse (listBeforeRevers d list Nil))
+    where
+        listBeforeRevers :: forall a. Int -> List a -> List a -> List a
+        listBeforeRevers 0 _ newList = newList 
+        listBeforeRevers _ Nil newList = newList 
+        listBeforeRevers digit (x : xs) newList = if (digit > 0) then (listBeforeRevers (digit - 1) xs (x : newList)) else newList
