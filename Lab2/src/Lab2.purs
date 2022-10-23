@@ -42,3 +42,8 @@ filter2 f list = (reverse (listBeforeRevers f list Nil))
         listBeforeRevers :: forall a. (a -> Boolean) -> List a -> List a -> List a
         listBeforeRevers f (x : xs) newList =  if (f x) then (listBeforeRevers f xs (x : newList)) else (listBeforeRevers f xs newList)
         listBeforeRevers _ _ newList = newList
+
+take :: forall a. Int -> List a -> List a
+take 0 _ = Nil 
+take _ Nil = Nil 
+take digit (x : xs) = if (digit > 0) then (x : (take (digit - 1) xs)) else Nil

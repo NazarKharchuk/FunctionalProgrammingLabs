@@ -40,3 +40,7 @@ main = do
   log "\tFunction #6"
   log "Function \"filter2\" with arguments: (_ <= 4) (1 : 2 : 3 : 4 : 5 : 6 : Nil)"
   log $ show $ Lab2.filter (_ <= 4) (1 : 2 : 3 : 4 : 5 : 6 : Nil)
+
+  log "\tFunction #7"
+  log "Function \"take\" with arguments: 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)"
+  log $ show $ Lab2.take 3 (1 : 2 : 3 : 4 : 5 : 6 : Nil)
