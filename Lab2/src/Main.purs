@@ -32,3 +32,7 @@ main = do
   log "\tFunction #4"
   log "Function \"unzip\" with arguments: zip((\"one\" : \"two\" : \"three\" : Nil) (1 : 2 : 3 : Nil))"
   log $ show $ Lab2.unzip (Lab2.zip ("one" : "two" : "three" : Nil) (1 : 2 : 3 : Nil))
+
+  log "\tFunction #5"
+  log "Function \"filter\" with arguments: (_ <= 4) (1 : 2 : 3 : 4 : 5 : 6 : Nil)"
+  log $ show $ Lab2.filter (_ <= 4) (1 : 2 : 3 : 4 : 5 : 6 : Nil)

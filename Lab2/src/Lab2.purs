@@ -31,3 +31,7 @@ unzip tupleList = (Tuple (createList tupleList (\(Tuple one _) -> one)) (createL
         createList :: forall a_or_b. List (Tuple a b) -> ((Tuple a b) -> a_or_b) -> List a_or_b
         createList (x : xs) f = ((f x) : (createList xs f))
         createList Nil _ = Nil
+
+filter :: forall a. (a -> Boolean) -> List a -> List a
+filter f (x : xs) = if (f x) then (x : (filter f xs)) else (filter f xs)
+filter _ Nil = Nil
