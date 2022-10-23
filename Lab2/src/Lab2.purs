@@ -35,3 +35,10 @@ unzip tupleList = (Tuple (createList tupleList (\(Tuple one _) -> one)) (createL
 filter :: forall a. (a -> Boolean) -> List a -> List a
 filter f (x : xs) = if (f x) then (x : (filter f xs)) else (filter f xs)
 filter _ Nil = Nil
+
+filter2 :: forall a. (a -> Boolean) -> List a -> List a
+filter2 f list = (reverse (listBeforeRevers f list Nil))
+    where
+        listBeforeRevers :: forall a. (a -> Boolean) -> List a -> List a -> List a
+        listBeforeRevers f (x : xs) newList =  if (f x) then (listBeforeRevers f xs (x : newList)) else (listBeforeRevers f xs newList)
+        listBeforeRevers _ _ newList = newList
